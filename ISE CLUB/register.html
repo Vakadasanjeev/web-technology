@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <script>
+        function myFunction() {
+          alert("Your entry has been submitted successfully!");
+        }
+        </script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="http://nmit.ac.in/">
+        <img id="first" src="nmit.png"  height="50px" width="50px" align="left"> </a>
+        <a  href="homepage.html">Home</a>
+        <a  href="homepage.html">About</a>
+        <a class="active" href="register.html">Registration</a>
+        <a  href="commitee.html">Commitee</a>
+        <img src="download.png" height="80px" width="70px" align="right">
+    </div>
+    
+    <h1 align = "center">WELCOME TO ISE CLUB</h1>
+    <h2>FILL THE REGISTRATION FORM</h2>
+    <form method = "post">
+        <label for = "Name"><b>Member Name: </b></label>
+        <input type = "text" name = "name"><br><br>
+        <label for = "designation"><b>Designation: </b></label>
+        <input type = "datalist" name = "designation"><br><br>
+        <b>Gender: </b>
+        <input type = "radio" name = "gender" value = "male">
+        <label for = "male">Male</label>
+        <input type = "radio" name = "gender" value = "female">
+        <label for = "female">Female</label><br><br>
+        <label for = "dob"><b>Date of Birth</b></label>
+        <input type = "date" name = "dob" value = ""><br><br>
+        <label for = "phonenumber"><b>Phone Number</b></label>
+        <input type = "phonenumber" name ="phonenumber" value = ""><br><br>
+        <label for = "address"><b>Address</b></label>
+        <input type = "text" name = "address" value = ""><br><br>
+        <label for = "email"><b>Email</b></label>
+        <input type = "email" name = "email" value = ""><br><br>
+        <button type = "submit" name = "submit" onclick="myFunction()">SUBMIT</button>
+    </form>
+    <hr><a href = "index.html"><b>GO TO HOME</b></a>
+</body>
+</html>
