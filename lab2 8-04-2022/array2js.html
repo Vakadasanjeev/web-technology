@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+             var arr1=[];
+      var size= prompt("enter the size of array");
+      for(i=0;i<size;i++)
+      {
+          arr1[i]=prompt("enter the array element");
+      }
+      console.log(arr1);
+       var m = 1;
+       var count = 0;
+    var item;
+for (var i=0; i<size; i++)
+{
+        for (var j=i; j<size; j++)
+        {
+                if (arr1[i] == arr1[j])
+                 count++;
+                 
+              if (m<count)
+                {
+                  m=count; 
+                  item = arr1[i];
+                }
+                 }
+        count=0;
+}
+console.log(item+" ( " +m+" times ) ") ;
+    </script>
+</body>
+</html>
